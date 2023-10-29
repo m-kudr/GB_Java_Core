@@ -1,0 +1,7 @@
+services:
+  app:
+    image: bellsoft/liberica-openjdk-alpine:11.0.16.1-1
+    command: javac -cp /home/src/main/java -d /home/out /home/src/main/java/Main.java
+    volumes:
+      - /home/Sem1/out:/home/out
+      - /home/Sem1/src:/home/src
