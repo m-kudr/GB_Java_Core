@@ -1,4 +1,4 @@
-package Validation;
+package Task1;
 
 public class WrongLoginException extends RuntimeException {
     private int logLength;

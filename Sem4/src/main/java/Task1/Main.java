@@ -1,7 +1,6 @@
-import Validation.WrongLoginException;
-import Validation.WrongPasswordException;
+package Task1;
 
-import static Validation.Check.checkCredentials;
+import static Task1.Check.checkCredentials;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +21,7 @@ public class Main {
                 e.printStackTrace();
             } catch (WrongPasswordException e) {
                 System.out.println(e.getMessage());
+                e.printStackTrace();
             }
         }
     }
