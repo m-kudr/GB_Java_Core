@@ -12,12 +12,12 @@ public class WrongPasswordException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        boolean badLength = passLength <= 20;
-        return String.format("Your password is of %s correct length %s %d. Password %s match the confirmation.",
-                ((badLength) ? "in" : ""),
-                ((badLength) ? ", expected > 20, given" : ","),
+        boolean wrongLength = passLength <= 20;
+        return String.format("Пароль %sверной длины%s %d. Пароли %sсовпадают.",
+                ((wrongLength) ? "не" : ""),
+                ((wrongLength) ? ", ожидается > 20, получен" : ","),
                 passLength,
-                (matchConfirm) ? "" : "doesn't ");
+                (matchConfirm) ? "" : "не ");
     }
 
 }

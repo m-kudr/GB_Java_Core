@@ -10,6 +10,6 @@ public class WrongLoginException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        return String.format("Неверная длина пароля, ожидается < 20, получено %d.", logLength);
+        return String.format("Неверная длина логина, ожидается < 20, получено %d.", logLength);
     }
 }
