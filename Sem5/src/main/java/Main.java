@@ -24,8 +24,11 @@ public class Main {
 //                System.out.println(", AverageGrade: " + s.getAverageGrade());
 //            }
 //        }
+
         Stream<Students> streamStudents = Arrays.stream(students);
+        String filerSpec = "Информатика";
         System.out.println(streamStudents
+                .filter((s) -> s.getSpecialty().equals(filerSpec))
                 .collect(Collectors.toList()));
     }
 }
