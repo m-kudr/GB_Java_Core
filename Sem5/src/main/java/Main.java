@@ -29,6 +29,7 @@ public class Main {
         String filerSpec = "Информатика";
         System.out.println(streamStudents
                 .filter((s) -> s.getSpecialty().equals(filerSpec))
+                .limit(5)
                 .collect(Collectors.toList()));
     }
 }
