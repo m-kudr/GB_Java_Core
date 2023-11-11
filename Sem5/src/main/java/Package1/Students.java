@@ -14,9 +14,18 @@ public class Students {
     private List<Double> grades;
     private String specialty;
 
-    public String getSpecialty(){
-        return this.specialty;
+    public String getName() {
+        return name;
     }
+
+    public List<Double> getGrades() {
+        return grades;
+    }
+
+    public String getSpecialty() {
+        return specialty;
+    }
+
     public double getAverageGrade() {
         double sum = 0;
         for (Double grade : grades) {
